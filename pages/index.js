@@ -36,7 +36,7 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const res = await fetch('https://jsonplaceholder.typicode.com/todos/')
+  const res = await fetch('https://graphqldbone.herokuapp.com/Products')
   const posts = await res.json()
 
   // By returning { props: { posts } }, the Blog component
